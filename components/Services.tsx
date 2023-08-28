@@ -14,7 +14,7 @@ const Services = () => {
 
 
 
-    <div className="md:container md:mx-auto flex-col md:flex-row rounded-[50px]  mx-auto md:mt-[-240px] sm:mt-[-200px] ">
+    <div className="md:container md:mx-auto flex-col md:flex-row rounded-[50px]  mx-auto md:mt-[-240px] md:mt-[-200px] ">
       <div className="flex flex-col md:flex-row p-10  ">
      <div className="w-1/3 bg-white md:rounded-l-[50px]   border  border-b border-l w-full    tracking-wide">
 
