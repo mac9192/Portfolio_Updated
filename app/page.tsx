@@ -5,7 +5,7 @@
  import ProjectsCard from '../components/ProjectsCard'
  import Contact from '../components/Contact'
  import ContactForm from '../components/ContactForm'
- import CommentsForm from '../components/CommentsForm'
+ 
 
 export default function Home() {
   return (

@@ -18,16 +18,20 @@ const Services = () => {
       <div className="flex flex-col md:flex-row p-10  ">
      <div className="w-1/3 bg-white md:rounded-l-[50px]   border  border-b border-l w-full    tracking-wide">
 
+{
+/*
        <div className="flex flex-col mx-auto text-center items-center tracking-wide">
           
           {PROJECT_QUALIFICATIONS.map((qualification, index) => (
-            <div className="border b-2">
+            <div className="border b-2" key={qualifications1}>
                 {qualification.title}
              </div>
           ))}
            
        </div>
 
+*/
+}
 
     
      <div className="flex flex-col mx-auto text-center items-center tracking-wide">
