@@ -1,12 +1,38 @@
 import React from 'react'
 import Image from 'next/image'
+import { PROJECT_QUALIFICATIONS } from '../PROJECT_DATA'
 
 const Services = () => {
+
+  const qualifications1 = PROJECT_QUALIFICATIONS[0]
+  const qualifications2 = PROJECT_QUALIFICATIONS[1]
+  const qualifications3 = PROJECT_QUALIFICATIONS[2]
+  console.log(qualifications1.skills)
+   
+
   return (
+
+
+
     <div className="md:container md:mx-auto flex-col md:flex-row rounded-[50px]  mx-auto md:mt-[-240px] sm:mt-[-200px] ">
       <div className="flex flex-col md:flex-row p-10  ">
      <div className="w-1/3 bg-white md:rounded-l-[50px]   border  border-b border-l w-full    tracking-wide">
+
+       <div className="flex flex-col mx-auto text-center items-center tracking-wide">
+          
+          {PROJECT_QUALIFICATIONS.map((qualification, index) => (
+            <div className="border b-2">
+                {qualification.title}
+             </div>
+          ))}
+           
+       </div>
+
+
+    
      <div className="flex flex-col mx-auto text-center items-center tracking-wide">
+          
+       
                <Image src = "/assets/www.png" alt="/" width="150" height="500" priority={true} /> 
                 <div className="text-4xl">Designer</div>
                 <div className="p-7 text-2xl sm:text-xl">I value quality within content structure, clean and inviting designs.</div>

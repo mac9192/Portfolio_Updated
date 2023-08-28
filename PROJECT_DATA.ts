@@ -1,5 +1,5 @@
 
- import {Project} from './types/collection'
+ import {Project, Qualifications} from './types/collection'
 
 export const PROJECT_DATA: Project[] = [
     {
@@ -111,4 +111,39 @@ export const PROJECT_DATA: Project[] = [
 ];
 //Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
  //Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
- 
+ export const PROJECT_QUALIFICATIONS: Qualifications[] = [
+    {
+        id: "1",
+        image: "",
+        title:"Designer",
+        descriptionIntro:"I value quality within the content structure, clean and inviting designs",
+        thingsI:"Things I enjoy designing:",
+        description:["UX", "UI", "Web","Logos"],
+        tools:"Design Tools: ",
+        skills:["Figms", "Adobe", "Photoshop", "Font Awesome", "Pen & Paper",],
+      
+    },
+    {
+        id: "2",
+        image: "",
+        title:"Frontend Developer",
+        descriptionIntro:"I like to code things from scratch and enjoy wtahcing designs come to life on the browser",
+        thingsI:"Languages I speak:",
+        description:["Typescript","JavaScript","HTML","CSS"],
+        tools:"Dev Tools:",
+        skills:["Next.js","React","Node","Express","MongoDB","GraphQL", "Sanity", "Tailwind", "Framer Motion"],
+      
+    },
+    {
+        id: "3",
+        image: "",
+        title:"Blockchain",
+        descriptionIntro:"Navigating the Cosmos: My Journey un Powering the Future of Blockchain through Proof-of-Stake",
+        thingsI:"Things I enjoy in Blockchain:",
+        description:["Validator","Node","dApp"],
+        tools:"Blockchain Tools",
+        skills:["Cosmos Ecosystem","Proof-of-Stake","Tendermint", "Rust", "CosmWasm", "Validator", "Linux Ubuntu", "AWS EC2", "Linode", "Nginx"]
+      
+    },
+
+];

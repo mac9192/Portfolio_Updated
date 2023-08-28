@@ -1,20 +1,57 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
+import { sendEmail } from '../services/sendEmail'
 
-const Header = () => {
+const ContactForm = () => {
   return (
     <div id="contact" className="flex sm:flex-col md:flex-row w-full text-white tracking-wide py-1">
-    <form className="w-full flex md:flex-row sm:flex-col gap-x-3">
+    <form 
+          className="w-full flex md:flex-row sm:flex-col gap-x-3"
+          action={async (formData) => {
+          console.log("Running on Client")
+          console.log(formData.get("senderName"));
+          console.log(formData.get("senderEmail"))
+          console.log(formData.get("senderSubject"))
+          console.log(formData.get("senderMessage"))
+          
+          await sendEmail(formData); 
+          }}
+    >
         <div className ="flex-col w-full">
               <div className="w-full flex md:flex-row sm:flex-col">
-            <input type="name" id="name" className="w-full bg-bluebg tracking-wide border rounded-[50px] text-[30px] text-center md:h-40 sm:h-20  text-white placeholder-white  focus:outline-none  focus:border-mintbg border-4 border-solid p-10  " placeholder="name" required/>
+            <input type="name" 
+                   id="name"
+                   name="senderName"
+                   className="w-full bg-bluebg tracking-wide border rounded-[50px] text-[30px] text-center md:h-40 sm:h-20  text-white placeholder-white  focus:outline-none  focus:border-mintbg border-4 border-solid p-10  " 
+                   placeholder="name" 
+                   maxLength={500}
+                   required/>
         
-            <input type="email" id="email" className="w-full bg-bluebg tracking-wide border rounded-[50px] text-[30px] text-center  md:h-40 sm:h-20 h-40 placeholder-white focus:outline-none  focus:border-mintbg border-4 border-solid p-10" placeholder="email" required/>
-            <input type="subject" id="subject" className="w-full bg-bluebg  border rounded-[50px] text-[30px] text-center md:h-40 sm:h-20 h-40 placeholder-white focus:outline-none  focus:border-mintbg border-4 border-solid p-10" placeholder="subject" required/>
+            <input type="email" 
+                   id="email" 
+                   name="senderEmail"
+                   className="w-full bg-bluebg tracking-wide border rounded-[50px] text-[30px] text-center  md:h-40 sm:h-20 h-40 placeholder-white focus:outline-none  focus:border-mintbg border-4 border-solid p-10" 
+                   placeholder="email" 
+                   maxLength={500}
+                   required/>
+            <input type="subject" 
+                   id="subject" 
+                   name="senderSubject"
+                   className="w-full bg-bluebg  border rounded-[50px] text-[30px] text-center md:h-40 sm:h-20 h-40 placeholder-white focus:outline-none  focus:border-mintbg border-4 border-solid p-10" 
+                   placeholder="subject" 
+                   maxLength={500}
+                   required/>
         
             </div>
             <div className="py-1">
-                 <textarea id="message"  className=" w-full bg-bluebg rounded-[50px] tracking-wide h-[500px] py-10 text-[30px]  text-white placeholder-white text-center align-center justify-center items-center " placeholder="Leave a comment..."></textarea>
+                 <textarea id="message"  
+                           name="senderMessage"
+                           className=" w-full bg-bluebg rounded-[50px] tracking-wide h-[300px] py-10 text-[30px]  text-white placeholder-white text-center align-center justify-center items-center " 
+                           placeholder="Leave a comment..."
+                           required
+                           maxLength={500}/>
+                           
             </div>
       
         </div>
@@ -31,7 +68,7 @@ const Header = () => {
   )
 }
 
-export default Header
+export default ContactForm
 
 /*
 

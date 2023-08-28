@@ -41,33 +41,33 @@ const Projects = () => {
                     <div className=" flex flex-row w-full items-center text-center md:gap-x-10 sm:gap-x-1   ">
 
                      
-                    <div className="w-1/2 text-white  bg-white rounded-[50px] min-h-[300px] mx-auto card1   ">
+                    <div className="w-1/2 text-white  bg-white rounded-[50px]  mx-auto card1   ">
                                 <ProjectsCard project={PROJECT_DATA[0]}/>
                         </div>
                         
                         
-                        <div className="w-1/2 text-white  bg-white rounded-[50px] min-h-[300px] mx-auto   card1 ">
+                        <div className="w-1/2 text-white  bg-white rounded-[50px]   mx-auto   card1 ">
                                 <ProjectsCard project={PROJECT_DATA[1]}/>
                         </div>
                     </div>
 
                  
                 </div>
-                <div className="w-full bg-white text-white items-center text-center mx-auto rounded-[50px] gap-y-10 min-h-[500px] mt-12 card1  ">
+                <div className="w-full bg-white text-white items-center text-center mx-auto rounded-[50px] gap-y-10   mt-12 card1  ">
                        <ProjectsCard project={PROJECT_DATA[2]} />
                 </div>
             </div>
 
             <div className="w-full   ">
-            <div className="w-full bg-white text-white items-center text-center rounded-[50px] min-h-[500px] card1  ">
+            <div className="w-full   text-white items-center text-center rounded-[50px]   card1  ">
             <ProjectsCard project={PROJECT_DATA[3]} />
                 </div>
                 <div className="   text-white flex flex-row text-center mx-auto mt-12   ">
                     <div className=" flex w-full items-center text-center md:gap-x-10 sm:gap-x-1  ">
-                        <div className="w-1/2   rounded-[50px] min-h-[300px] card1 ">
+                        <div className="w-1/2   rounded-[50px]   card1 ">
                                 <ProjectsCard project={PROJECT_DATA[4]}  />
                         </div>
-                        <div className="w-1/2 bg-white  text-black rounded-[50px] min-h-[300px] card1 ">
+                        <div className="w-1/2 bg-white  text-black rounded-[50px]   card1 ">
                                 <ProjectsCard project={PROJECT_DATA[5]} />
                         </div>
                     </div>

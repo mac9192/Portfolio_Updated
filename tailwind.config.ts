@@ -33,10 +33,10 @@ const config: Config = {
       },
     },
     screens: {
-      sm: '300px',
-      md: '868px',
-      lg: '1206px',
-      xl: '1850px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
     },
     minWidth: {
       '1/2': '50%',
@@ -47,3 +47,12 @@ const config: Config = {
   plugins: [],
 }
 export default config
+
+
+/*
+    sm: '300px',
+      md: '868px',
+      lg: '1206px',
+      xl: '1850px',
+
+*/

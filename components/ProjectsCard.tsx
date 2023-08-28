@@ -35,7 +35,7 @@ const ProjectsCard = ({project}:ProjectProps) => {
  
   
     <Tilt options={defaultOptions}  >
-    <div className=" flex flex-col   border  hover:    hover:border-bluebg w-full bg-color1 text-black min rounded-[50px] min-h-[300px] relative min-h-[500px] p-10 mx-auto align-center justify-center flex ">
+    <div className=" flex flex-col   border  hover:    hover:border-bluebg w-full bg-color1 text-black min rounded-[50px] md:min-h-[300px] relative lg:min-h-[370px] p-10 mx-auto align-center justify-center flex ">
     <Image
       layout="fill"
       className="object-center items-center mx-auto object-contain pointer-events-none p-5  flex "

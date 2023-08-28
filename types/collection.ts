@@ -16,4 +16,17 @@ export interface Project {
     url:string;
 }
 
+
+export interface Qualifications {
+   id:string,
+   image:string,
+   title:string,
+   thingsI:string, 
+   descriptionIntro: string,
+   description: string[],
+   tools:string,
+  
+   skills: string[];
+}
+
  

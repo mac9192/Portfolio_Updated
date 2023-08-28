@@ -8,7 +8,7 @@ const Header = () => {
         <h1 className="mx-auto text-center sm:text-[30px] md:text-[60px] text-text_blue font-medium font-semibold tracking-wide ">Designer, Blockchain & Full Stack Developer</h1>
         <p className="p-5 sm:text-[20px] md:text-[30px] tracking-wide ">  Bringing Digital Dreams to Life, One Line at a Time</p>
         <div className="mx-auto">
-          <Image src = "/assets/mf-avatar.svg" alt="/" width={300} height={500} priority={true} />  
+          <Image src = "/assets/mf-avatar2.svg" alt="/" width={300} height={500} priority={true} />  
         </div>
         <div className="mx-auto py-10 text-center items-center">
            <Image src = "/assets/devices.svg" alt="/" width="1000" height="500" priority={true} /> 
