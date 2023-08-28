@@ -2,21 +2,28 @@
 import React from 'react'
 import Image from 'next/image'
 import { sendEmail } from '../services/sendEmail'
+import { experimental_useFormStatus as useFormStatus} from 'react-dom'
+import SubmitBtn from '../components/SubmitBtn'
+import { toNamespacedPath } from 'path'
+import toast from "react-hot-toast"
 
 const ContactForm = () => {
+
+  const {pending} = useFormStatus()
+
   return (
     <div id="contact" className="flex sm:flex-col md:flex-row w-full text-white tracking-wide py-1">
     <form 
           className="w-full flex md:flex-row sm:flex-col gap-x-3"
           action={async (formData) => {
-          console.log("Running on Client")
-          console.log(formData.get("senderName"));
-          console.log(formData.get("senderEmail"))
-          console.log(formData.get("senderSubject"))
-          console.log(formData.get("senderMessage"))
-          
-          await sendEmail(formData); 
-          }}
+            const {data,error} =  await sendEmail(formData)
+
+            if (error){
+                toast.error(error)
+                return;
+            }
+            toast.success('Email sent successfully')
+          }} 
     >
         <div className ="flex-col w-full">
               <div className="w-full flex md:flex-row sm:flex-col">
@@ -50,16 +57,14 @@ const ContactForm = () => {
                            className=" w-full bg-bluebg rounded-[50px] tracking-wide h-[300px] py-10 text-[30px]  text-white placeholder-white text-center align-center justify-center items-center " 
                            placeholder="Leave a comment..."
                            required
-                           maxLength={500}/>
+                           maxLength={5000}/>
                            
             </div>
       
         </div>
       
       
-        <button className="text-white bg-mintbg md:w-1/5 text-[30px] sm:w-full tracking-wide rounded-[50px] md:h-full sm:h-[100px]">
-            Submit
-        </button>
+        <SubmitBtn />
     </form>
         
       
