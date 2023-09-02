@@ -28,7 +28,7 @@ const Projects = () => {
     <div  className="flex w-full mb-20   rounded">
         <div className="flex flex-col mx-auto">
             <h1 className="text-center mx-auto sm:text-3xl md:text-[60px] font-medium title-font text-gray-900  lg:mb-0 mb-4 pb-8">My Recent Projects</h1>
-      <p className="lg:pl-6 lg:w-3/3 mx-auto leading-relaxed text-2xl sm:text-xl">Here are some of the projects I have workerd on throughout the course of my coding career:</p>
+      <p className="lg:pl-6 lg:w-3/3 mx-auto leading-relaxed text-black text-xl sm:text-3xl">Here are some of the projects I have workerd on throughout the course of my coding career:</p>
         </div>
       
     </div>

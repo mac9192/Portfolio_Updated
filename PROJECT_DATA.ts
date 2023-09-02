@@ -120,7 +120,7 @@ export const PROJECT_DATA: Project[] = [
         thingsI:"Things I enjoy designing:",
         description:["UX", "UI", "Web","Logos"],
         tools:"Design Tools: ",
-        skills:["Figms", "Adobe", "Photoshop", "Font Awesome", "Pen & Paper",],
+        skills:["Figma", "Adobe Creative Cloud", "Wireframing", "Color Picker", "Google Fonts","Adobe Color Wheel", "Pen & Paper",],
       
     },
     {
@@ -131,7 +131,7 @@ export const PROJECT_DATA: Project[] = [
         thingsI:"Languages I speak:",
         description:["Typescript","JavaScript","HTML","CSS"],
         tools:"Dev Tools:",
-        skills:["Next.js","React","Node","Express","MongoDB","GraphQL", "Sanity", "Tailwind", "Framer Motion"],
+        skills:["Next.js","React","Node.Js","Express.Js","MongoDB","GraphQL", "RESTful APIs", "Version Control (Git)","Vercel","Web Security","Tailwind", "Framer Motion"],
       
     },
     {
