@@ -11,7 +11,7 @@ const abhaya_Libre = Abhaya_Libre({weight:'400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Miguels Web Dev Portfolio',
-  description: 'This is a page showcasing Miguels projects',
+  description: 'Atlanta Web Design, Blockchain, and Full Stack Agency',
 }
 
 export default function RootLayout({
