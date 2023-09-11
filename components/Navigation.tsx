@@ -73,12 +73,12 @@ const [toggle, setToggle] = useState(false)
                      <a className="text-md" href="#projects">Projects</a>
                     </li>
                   <li>
-                  <button
+                  <a href="#contact"
                         type="button"
                         className="inline-block bg-white rounded-full border-[3px] border-bluebg px-6 pb-[12px] pt-3 text-[20px] font-medium uppercase leading-normal text-bluebg transition duration-150 ease-in-out hover:border-primary-600 hover:bg-bluebg  hover:text-white focus:border-primary-600 focus:text- focus:outline-none focus:ring-0 active:border-purplebg active:text-purplebg "
                              data-te-ripple-init>
                Lets Talk!
-                    </button>
+                    </a>
                     </li>
            
                 </ul>

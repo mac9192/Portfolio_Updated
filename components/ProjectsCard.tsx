@@ -54,7 +54,7 @@ const ProjectsCard = ({project}:ProjectProps) => {
     />
     </Link>
 
-    <Link className=""href={`/projects/${project?.slug}`}>
+    <a className=""href={project.url}>
          <Image
       
       className="object-center absolute bottom-0 left-0   mt-auto flex items-center mx-auto object-contain   p-10  flex "
@@ -63,7 +63,7 @@ const ProjectsCard = ({project}:ProjectProps) => {
       width={105}
       alt="/"
     />
-    </Link>
+    </a>
      
 
  
