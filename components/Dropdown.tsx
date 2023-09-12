@@ -22,6 +22,9 @@ const Dropdown = () => {
                     <li>
                         <a href="#projects">Projects</a>
                     </li>
+                    <li>
+                        <Link href={`/resume`}>Resume</Link>
+                    </li>
                  
                     <li>
                     <a href="#contact">Contact Me</a>

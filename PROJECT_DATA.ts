@@ -131,7 +131,7 @@ export const PROJECT_DATA: Project[] = [
         thingsI:"Languages I speak:",
         description:["Typescript","JavaScript","HTML","CSS"],
         tools:"Dev Tools:",
-        skills:["Next.js","React","Node.Js","Express.Js","MongoDB","GraphQL", "RESTful APIs", "Version Control (Git)","Vercel","Web Security","Tailwind", "Framer Motion"],
+        skills:["Next.js","React","Node.Js","Express.Js","MongoDB","GraphQL", "RESTful APIs", "Version Control (Git)","Vercel","Web Security","Tailwind", "Framer Motion","Google Analytics", "SEO", ],
       
     },
     {

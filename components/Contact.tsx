@@ -9,6 +9,16 @@ const Contact = () => {
          <h2 className="md:text-[32px] sm:text-[18px] tracking-wide">GET IN TOUCH!</h2>
          <h3 className="md:text-[60px] sm:text-[38px] sm:py-3 tracking-wide">Do you have a question, an idea, or a project you need help with?</h3>
          <h4 className="md:text-[50px] sm:text-[30px]  tracking-wide" >Contact me!</h4>
+         <div className="flex flex-row p-3 gap-x-6">
+           <a href="https://github.com/mac9192">
+              <Image src = "/assets/linkedin1.svg" alt="/" width="50" height="100" priority={true} /> 
+           </a>
+          <a href="https://www.linkedin.com/in/miguel-colmenares-a32537119/">
+            <Image src = "/assets/github1.svg" alt="/" width="50" height="100" priority={true} /> 
+          </a>
+           
+         </div>
+         
          <div className="flex flex-col flex  py-10">
          
             <div className="flex flex-row gap-x-10">

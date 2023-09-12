@@ -72,6 +72,9 @@ const [toggle, setToggle] = useState(false)
                 <li className="text-[25px] p-5 text-black font-light text-md">
                      <a className="text-md" href="#projects">Projects</a>
                     </li>
+                    <Link href="/resume"className="text-[25px] p-5 text-black font-light text-md">
+                        Resume
+                    </Link>
                   <li>
                   <a href="#contact"
                         type="button"
