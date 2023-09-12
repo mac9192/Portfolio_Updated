@@ -68,7 +68,9 @@ const [toggle, setToggle] = useState(false)
           </Link>
             <div className="hidden md:flex flex space-x-6 text-md text-black ">
             <ul className=" hidden md:flex flex items-center gap-4 text-neutral-600 text-black">
-                
+            <Link href="/"className="text-[25px] p-5 text-black font-light text-md">
+                      Home
+                    </Link>
                 <li className="text-[25px] p-5 text-black font-light text-md">
                      <a className="text-md" href="#projects">Projects</a>
                     </li>
