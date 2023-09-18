@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from "next/link"
- 
+import { usePathname } from 'next/navigation' 
 
 const Dropdown = () => {
+
+    const location = usePathname()
   return (
     <div>
         <div className="md:hidden">
@@ -19,9 +21,9 @@ const Dropdown = () => {
                     <li>
                         <Link href={`/`}>Home</Link>
                     </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
+                    {location  !== '/resume' && (
+          <li >   <a className="text-md" href="#projects">Projects</a></li>
+        )}
                     <li>
                         <Link href={`/resume`}>Resume</Link>
                     </li>

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from "next/link"
 import Dropdown from './Dropdown'
+import { usePathname } from 'next/navigation'
  
 
 
@@ -12,6 +13,12 @@ import Dropdown from './Dropdown'
 
 const Navigation = () => {
 
+    const location = usePathname()
+    console.log('location')
+ 
+
+   console.log('location',location)
+ 
 
     //Mobile -- Lang(To Do)
 
@@ -71,9 +78,13 @@ const [toggle, setToggle] = useState(false)
             <Link href="/"className="text-[25px] p-5 text-black font-light text-md">
                       Home
                     </Link>
-                <li className="text-[25px] p-5 text-black font-light text-md">
-                     <a className="text-md" href="#projects">Projects</a>
-                    </li>
+
+                    {location  !== '/resume' && (
+          <li className="text-[25px] p-5 text-black font-light text-md">   <a className="text-md" href="#projects">Projects</a></li>
+        )}
+
+                     
+          
                     <Link href="/resume"className="text-[25px] p-5 text-black font-light text-md">
                         Resume
                     </Link>
