@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid'
 const defaultValue = [
     {
       id: nanoid(),
-      text: 'Hello, welcome to Cheves Briceno. How can we assist?',
+      text: 'Hello, I am Miguels chatbot, MAC. I am here to answer any portfolio or resume questions. Ask Away!',
       isUserMessage: false,
     },
   ]
