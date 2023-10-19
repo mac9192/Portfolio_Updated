@@ -6,6 +6,8 @@ import Contact from '../components/Contact'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import { Toaster } from "react-hot-toast";
+import Providers from '../chatbot-components/Providers'
+import Chat from '../chatbot-components/Chat'
 
 const abhaya_Libre = Abhaya_Libre({weight:'400', subsets: ['latin'] })
 
@@ -25,14 +27,20 @@ export default function RootLayout({
       <head>
         <link rel='icon' href='/favicon.ico'/>
       </head>
-      <body className={abhaya_Libre.className} >
+
+      <Providers>
+
+         <body className={abhaya_Libre.className} >
         <Navigation />
         {children}
         <Contact />
         <ContactForm />
+      <Chat />
         <Footer />
         <Toaster position="top-right" />
       </body>
+      </Providers>
+     
     </html>
   )
 }
