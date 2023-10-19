@@ -14,7 +14,6 @@ If asked about a certain language or tool refer them to the link of the project 
 Only include links in markdown format.
 Example: 'You can browse our books [here](https://www.ai-vttestweb.com/)'.
 Other than links, use regular text.
-
  
 
 

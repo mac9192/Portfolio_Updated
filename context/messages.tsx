@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid'
 const defaultValue = [
     {
       id: nanoid(),
-      text: 'Hello, I am Miguels personal AI chatbot! I am here to answer portfolio and resume questions. Ask Away! ',
+      text: 'Hello, welcome to Cheves Briceno. How can we assist?',
       isUserMessage: false,
     },
   ]
@@ -30,7 +30,7 @@ const defaultValue = [
     const [isMessageUpdating, setIsMessageUpdating] = useState<boolean>(false)
   
     const addMessage = (message: Message) => {
-      setMessages((prev) => [...prev, message])
+      setMessages((prev:any) => [...prev, message])
     }
   
     const removeMessage = (id: string) => {
