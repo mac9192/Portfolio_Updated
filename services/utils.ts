@@ -24,5 +24,5 @@ export const validateString = (
   
     return message;
   };
-ins
+
   
