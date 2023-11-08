@@ -68,7 +68,7 @@ export const PROJECT_DATA: Project[] = [
         image4: "/assets/briceno5.png",
         image5: "/assets/briceno7.png",
         slug:"cheves-briceno",
-        url:"https://ai-vttestweb.vercel.app/en",
+        url:"https://www.vttestweb.com/en",
     },
     {
         id: "5",

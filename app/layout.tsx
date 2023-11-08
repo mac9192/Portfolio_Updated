@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Abhaya_Libre } from 'next/font/google'
+import { Abhaya_Libre, Frank_Ruhl_Libre } from 'next/font/google'
 import Navigation from '../components/Navigation'
 import Contact from '../components/Contact'
 import ContactForm from '../components/ContactForm'
@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 import Providers from '../chatbot-components/Providers'
 import Chat from '../chatbot-components/Chat'
 
-const abhaya_Libre = Abhaya_Libre({weight:'400', subsets: ['latin'] })
+const abhaya_Libre = Frank_Ruhl_Libre({weight:'400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Miguels Web Dev Portfolio',
